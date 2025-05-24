@@ -1,0 +1,545 @@
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+.bgi {
+     background-color: #9b0822;
+     background-position: center;
+     background-repeat: no-repeat;
+     width: 100%;
+     background-size: cover;
+     height: 100vh;
+
+     
+}
+
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+.intro {
+     position: fixed;
+     z-index: 1;
+     left: 0;
+     top: 0;
+     width: 100%;
+     height: 100vh;
+     background-color: #9b0822;
+     transition: 1s ;
+}
+
+.logo_h1 {
+     position: absolute;
+     top: 40%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     color: azure;
+}
+
+.logo {
+     position: relative;
+     display: inline-block;
+     bottom: -20%;
+     opacity: 0;
+     font-family: "Good Timing W00 Heavy";
+     font-size: 100pt;
+}
+
+.logo.active {
+     bottom: 0;
+     opacity: 1;
+     transition: ease-in-out 0.5s;
+}
+
+.logo.fade {
+     bottom: 150px;
+     opacity: 0;
+     transition: ease-in-out 0.5s;
+}
+
+.logo1 {
+
+     width: 100px;
+     height: 100px;
+     margin-top:-25px;
+}
+body {
+     font-family: sans-serif;
+}
+
+
+nav {
+     background-color: #9b0822;
+     height: 80px;
+     width: 100%;
+     display: flex;
+     padding: 1%;
+     justify-content: center;
+}
+
+nav ul {
+     list-style: none;
+     display: flex;
+}
+
+nav ul li {
+     padding: 10px 30px;
+     position: relative;
+}
+
+nav ul li a {
+     color: azure;
+     text-decoration: none;
+     font-size: 20px;
+}
+
+nav ul li a:hover {
+     color: pink;
+}
+
+nav ul li:hover  .dropdwn {
+     display: block;
+     position: absolute;
+     top: 100%;
+     left: 0;
+     background-color: #9b0822;
+     z-index: 2000;
+}
+
+nav ul li:hover  .dropdwn a {
+     font-size: 10pt;
+}
+
+
+.dropdwn {
+     display: none;
+}
+
+nav ul li:hover  .dropdwn ul{
+     display: block;
+     margin: 5px;
+}
+
+nav ul li:hover  .dropdwn ul li{
+     width: 150px;
+     padding: 10px;
+}
+.drop2 {
+     display: none;
+}
+
+.drop_d:hover .drop2 {
+     display: block;
+     position: absolute;
+     top: 0;
+     left: 150px;
+     background-color: #9b0822;
+}
+
+.drop_d:hover .drop2 a {
+     font-size: 10pt;
+}
+
+.fas {
+     float: right;
+     margin: 5;
+     padding: 2px;
+}
+
+.clickim {
+     margin-top: 10px;
+     width: 90%;
+     height: 600px;
+     display: flex;
+     justify-self: center;
+     border-radius: 20px;
+}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  padding-top: 20px;
+  margin-top: 20px;
+}
+
+.active {
+  background-color: #9b0822;
+}
+
+.numbertext {
+  color: #9b0822;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot { 
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #83071e;
+  border-radius: 50%;
+  display: inline-block;
+  transition: #9b0822 0.6s ease;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+.bg2 {
+     background-color: #9b0822;
+     width: 100%;
+     height: 185vh;
+}
+
+.bg2 ul {
+     padding: 20px;
+     display: flex;
+     justify-content: center;
+}
+
+.bg2 ul p {
+     border: white 2px solid;
+     color: white;
+     padding: 20px;
+     border-radius: 20px;
+     height:300px;
+     width: 600px;
+     margin-top: 50px;
+}
+
+.imges {
+     width: 95%;
+     height: 95%;
+     justify-self: center;
+     display: flex;
+
+}
+
+
+
+.img1 {
+     display: flexbox;
+     align-content: center;
+     border-radius: 20px;
+     width: 600px;
+     height: 500px;
+     margin-right: 100px;
+     margin-left: -200px;
+     margin-top: 20px;   
+     position: relative;
+}
+
+.container{
+     margin-top: 200px;
+     position: relative;
+     width: 1500px;
+     display:flex;    
+     justify-self: center;
+     align-items: center;
+     flex-wrap: wrap;
+     padding: 100px;
+}
+
+.container .sq1{
+     position: relative;
+     max-width: 301px;
+     height: 280px;
+     background-color: #9b0822;
+     margin: 30px 10px;
+     padding: 10px 10px;
+     display: flex;
+     flex-direction: column;
+     box-shadow: 0 2px 2px white;
+     transition: 0.3s ease-in-out;
+     justify-items: center;
+     border-radius: 10px;
+}
+.container .sq1:hover{
+     height: 500px;
+     box-shadow: 0 2px 2px white;
+}
+
+
+.container .sq1 .img1{
+     position: relative;
+     width: 280px;
+     height: 260px;
+     top: -20px;
+     left: 200px;
+     z-index: 0;
+     box-shadow: 0 5px 30px #9b0822;
+}
+
+.container .sq1 .img1:hover {
+     box-shadow: 0 5px 30px azure;
+     transition: 0.3s ease-in;
+}
+
+.container .sq1 .img1 img{
+     max-width:  100%;
+     border-radius: 4px;
+     margin-top: -20px;
+}
+
+
+.container .sq1 .text{
+    position: relative;
+    margin-top: -10px;
+    padding-top: 100px;
+    text-align: justify;
+    color: azure;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.container .sq1:hover .text{
+    visibility: visible;
+    opacity: 1;
+    margin-top: -20px;
+    transition-delay: 0.3s;
+    width: 300px;
+    padding-top: 70px;
+    padding-left: 20px;
+    padding-right: 40px;
+}
+
+.container .sq1 .text h2 {
+     color: azure;
+     margin-bottom: 40px;
+     margin-top: -50px;
+     font-size: 15pt;
+     text-align: center;
+
+}
+
+.bb{
+     margin-left: 370px;
+     font-size:70pt;
+     font-style: italic;
+     font-family:sans-serif;
+     color: #9b0822;
+     text-shadow:black 2px;
+     text-align: center;
+     transition: 0.3s ease-in-out;
+     position: absolute;
+}
+
+hr{
+     margin-top: -20px;
+     height: 30px;
+     background-color: #9b0822;
+     border: none;
+     margin-bottom: 100px;
+}
+
+.Wb{
+     
+     margin-left: 480px;
+     font-style: italic;
+     font-family:sans-serif;
+     color: #9b0822;
+     text-shadow:black 2px;
+     text-align: center;
+     transition: 0.3s ease-in-out;
+     position: absolute;
+     font-size: 35pt;
+}
+
+
+.lagebox{
+     margin-top: 200px;
+     position: relative;
+     width: 1500px;
+     display:flex;    
+     justify-self: center;
+     align-items: center;
+     padding: 10px;
+     color: white;
+}
+
+.lagebox .boxs1{
+
+    margin-left: 120px;
+    position: relative;
+    width: 400px;
+    height: 400px;
+     border-color: #9b0822;
+     border-style: solid;
+
+}
+
+.lagebox .boxs2{
+
+    margin-left: 10px;
+    position: relative;
+    width: 400px;
+    height: 400px;
+      border-color: #9b0822;
+     border-style: solid;
+}
+
+.lagebox .boxs3{
+
+    margin-left: 10px;
+    position: relative;
+    width: 400px;
+    height: 400px;
+    border-color: #9b0822;
+     border-style: solid;
+}
+
+.lagebox .boxs1 p{
+    position: relative;
+    margin-top: 10px;
+    padding-top: 30px;
+    text-align: justify;
+    color: #83071e;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.lagebox .boxs2 p{
+    position: relative;
+    margin-top: 10px;
+    padding-top: 30px;
+    text-align: justify;
+    color: #83071e;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.lagebox .boxs3 p{
+    position: relative;
+    margin-top: 10px;
+    padding-top: 30px;
+    text-align: justify;
+    color: #83071e;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.imges2 {
+     margin-top: 40px;
+     width: 30%;
+     height: 30%;
+     display: flex;
+     justify-self: center;
+}
+
+.lagebox .boxs1 .t1{
+     margin-top: 30px;
+     font-family:sans-serif;
+     font-size: 16pt;
+     font-weight: bold;
+     text-align: center;
+}
+
+.lagebox .boxs2 .t1{
+     margin-top: 30px;
+     font-family:sans-serif;
+     font-size: 16pt;
+     font-weight: bold;
+     text-align: center;
+}
+
+.lagebox .boxs3 .t1{
+     margin-top: 30px;
+     font-family:sans-serif;
+     font-size: 16pt;
+     font-weight: bold;
+     text-align: center;
+}
+
+footer {
+     background-color: #9b0822;
+     margin-top: 50px;
+     display: flexbox;
+     height: 200px;
+     width: 100%;
+     padding: 1%;
+     justify-content: space-evenly;
+     position: absolute;
+}
+
+.contactblock {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-evenly;
+}
+
+.contactblock p {
+     color: azure;
+     margin-top: 20px;
+}
+
+.page{
+     margin-top: 20px;
+     margin-left: -100px;
+}
+
+.imgblock{
+     display: flex;
+     flex-direction: row;
+     justify-content: space-evenly;
+     margin-left: 100px;
+}
+
+.pin{
+     width: 25px;
+     height: 25px;
+     margin-top: 10px;
+}
+
+.phone {
+     width: 30px;
+     height: 30px;
+     margin-top: 10px;
+}
+
+.email {
+     width: 25px;
+     height: 25px;
+     margin-top: 10px;
+}
+
+.iconse {
+     display: grid;
+     margin-top: 30px;
+     margin-left:-80px;
+}   
+
+.names{
+     margin-top: 20px;
+}
+
+.copyR{
+     
+     margin-top: 30px;
+     margin-left: -10px;
+     margin-right: 100px;
+}
+
+.copyR h2{
+      
+    font-size: 30pt;
+    font-family: "Good Timing W00 Heavy";
+    color: white;
+}

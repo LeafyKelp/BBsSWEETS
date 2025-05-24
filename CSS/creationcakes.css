@@ -1,0 +1,504 @@
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+.logo{
+
+     width: 100px;
+     height: 100px;
+     margin-top:-25px;
+}
+body {
+     font-family: sans-serif;
+     background-image: url(../Image/2_20250507_175811_0001.png);
+     background-position: center;
+     background-size: cover;
+     height: 100vh;
+     background-attachment: fixed;
+     
+}
+
+
+nav {
+     background-color: #9b0822;
+     height: 80px;
+     width: 100%;
+     display: flex;
+     padding: 1%;
+     justify-content: center;
+
+}
+
+nav ul {
+     list-style: none;
+     display: flex;
+}
+
+nav ul li {
+     padding: 10px 30px;
+     position: relative;
+}
+
+nav ul li a {
+     color: azure;
+     text-decoration: none;
+     font-size: 20px;
+}
+
+nav ul li a:hover {
+     color: pink;
+}
+
+nav ul li:hover  .dropdwn {
+     display: block;
+     position: absolute;
+     top: 100%;
+     left: 0;
+     background-color: #9b0822;
+}
+
+nav ul li:hover  .dropdwn a {
+     font-size: 10pt;
+}
+
+
+.dropdwn {
+     display: none;
+}
+
+nav ul li:hover  .dropdwn ul{
+     display: block;
+     margin: 5px;
+}
+
+nav ul li:hover  .dropdwn ul li{
+     width: 150px;
+     padding: 10px;
+}
+
+.drop2 {
+     display: none;
+}
+
+.drop_d:hover .drop2 {
+     display: block;
+     position: absolute;
+     top: 0;
+     left: 150px;
+     background-color: #9b0822;
+}
+
+.drop_d:hover .drop2 a {
+     font-size: 10pt;
+}
+
+.fas {
+     float: right;
+     margin: 5;
+     padding: 2px;
+}
+
+
+
+.boxe1 {
+     margin-top: 50px;
+     display: flex;
+     justify-content: space-evenly;
+     flex-direction: row;
+     margin-bottom: 100px;
+}
+
+.boxe2 {
+     display: flex;
+     justify-content: space-evenly;
+     flex-direction: row;
+     margin-bottom: 100px;
+}
+
+.boxe3 {
+     display: flex;
+     justify-content: space-evenly;
+     flex-direction: row;
+     margin-bottom: 100px;
+}
+.boxe1 p {
+     display: flex;
+     justify-self: center;
+     color: azure;
+     font-weight: bold;
+     font-size: larger;
+     margin-top: 20px;
+}
+
+.boxe2 p {
+     display: flex;
+     justify-self: center;
+     color: azure;
+     font-weight: bold;
+     margin-top: 20px;
+}
+.boxe3 p {
+     display: flex;
+     justify-self: center;
+     color: azure;
+     font-weight: bold;
+     margin-top: 20px;
+}
+
+.boxe1 .cquare1 .price1 p{
+     font-size: 12pt;
+     font-family: monospace;
+     display: flex;
+     justify-self: baseline;
+     margin-left: 20px;
+     margin-top: 10px     ;
+}
+
+.boxe1 .cquare2 .price2 p{
+     font-size: 12pt;
+     font-family: monospace;
+     display: flex;
+     justify-self: baseline;
+     margin-left: 20px;
+     margin-top: 10px     ;
+}
+
+.boxe1 .cquare3 .price3 p{
+     font-size: 12pt;
+     font-family: monospace;
+     display: flex;
+     justify-self: baseline;
+     margin-left: 20px;
+     margin-top: 10px     ;
+}
+
+.boxe1 .cquare4 .price4 p{
+     font-size: 12pt;
+     font-family: monospace;
+     display: flex;
+     justify-self: baseline;
+     margin-left: 20px;
+     margin-top: 10px     ;
+}
+
+.boxe2.cquare5 .price5 p{
+     font-size: 12pt;
+     font-family: monospace;
+     display: flex;
+     justify-self: baseline;
+     margin-left: 20px;
+     margin-top: 10px     ;
+}
+
+.boxe2 .cquare5 .price5 p{
+     font-size: 12pt;
+     font-family: monospace;
+     display: flex;
+     justify-self: baseline;
+     margin-left: 20px;
+     margin-top: 10px     ;
+}
+.boxe2 .cquare6 .price6 p{
+     font-size: 12pt;
+     font-family: monospace;
+     display: flex;
+     justify-self: baseline;
+     margin-left: 20px;
+     margin-top: 15px     ;
+}
+
+.boxe2 .cquare7 .price7 p{
+     font-size: 12pt;
+     font-family: monospace;
+     display: flex;
+     justify-self: baseline;
+     margin-left: 20px;
+     margin-top: 15px     ;
+}
+
+.boxe2 .cquare8 .price8 p{
+     font-size: 12pt;
+     font-family: monospace;
+     display: flex;
+     justify-self: baseline;
+     margin-left: 20px;
+     margin-top: 10px     ;
+}
+
+.boxe3 .cquare9 .price9 p{
+     font-size: 12pt;
+     font-family: monospace;
+     display: flex;
+     justify-self: baseline;
+     margin-left: 20px;
+     margin-top: 10px     ;
+}
+.boxe3 .cquare10 .price10 p{
+     font-size: 12pt;
+     font-family: monospace;
+     display: flex;
+     justify-self: baseline;
+     margin-left: 20px;
+     margin-top: 15px     ;
+}
+
+.boxe3 .cquare11 .price11 p{
+     font-size: 12pt;
+     font-family: monospace;
+     display: flex;
+     justify-self: baseline;
+     margin-left: 20px;
+     margin-top: 10px     ;
+}
+
+.boxe3 .cquare12 .price12 p{
+     font-size: 12pt;
+     font-family: monospace;
+     display: flex;
+     justify-self: baseline;
+     margin-left: 20px;
+     margin-top: 10px     ;
+}
+.cquare1 {
+     background-color: #9b0822;
+     width: 270px;
+     height: 420px;
+     padding: 10px;
+     display: flexbox;
+     border-radius: 10px;
+}
+
+.cquare2 {
+     background-color: #9b0822;
+     width: 270px;
+     height: 420px;
+     padding: 10px;
+     display: flexbox;
+     border-radius: 10px;
+}
+
+.cquare3 {
+     background-color: #9b0822;
+     width: 270px;
+     height: 420px;
+     padding: 10px;
+     display: flexbox;
+     border-radius: 10px;
+}
+
+.cquare4 {
+     background-color: #9b0822;
+     width: 270px;
+     height: 420px;
+     padding: 10px;
+     display: flexbox;
+     border-radius: 10px;
+}
+
+.cquare5 {
+     background-color: #9b0822;
+     width: 270px;
+     height: 420px;
+     padding: 10px;
+     display: flexbox;
+     border-radius: 10px;
+}
+
+.cquare6 {
+     background-color: #9b0822;
+     width: 270px;
+     height: 420px;
+     padding: 10px;
+     display: flexbox;
+     border-radius: 10px;
+}
+
+.cquare7 {
+     background-color: #9b0822;
+     width: 270px;
+     height: 420px;
+     padding: 10px;
+     display: flexbox;
+     border-radius: 10px;
+}
+
+.cquare8 {
+     background-color: #9b0822;
+     width: 270px;
+     height: 420px;
+     padding: 10px;
+     display: flexbox;
+     border-radius: 10px;
+}
+
+.cquare9 {
+     background-color: #9b0822;
+     width: 270px;
+     height: 420px;
+     padding: 10px;
+     display: flexbox;
+     border-radius: 10px;
+}
+
+.cquare10{
+     background-color: #9b0822;
+     width: 270px;
+     height: 420px;
+     padding: 10px;
+     display: flexbox;
+     border-radius: 10px;
+}
+
+.cquare11 {
+     background-color: #9b0822;
+     width: 270px;
+     height: 420px;
+     padding: 10px;
+     display: flexbox;
+     border-radius: 10px;
+}
+
+.cquare12 {
+     background-color: #9b0822;
+     width: 270px;
+     height: 420px;
+     padding: 10px;
+     display: flexbox;
+     border-radius: 10px;
+}
+
+
+.cake1 {
+     width: 250px;
+     height: 250px;
+}
+
+.cake2{
+     width: 250px;
+     height: 250px;
+}
+
+.cake3 {
+     width: 250px;
+     height: 250px;
+}
+
+.cake4{
+     width: 250px;
+     height: 250px;
+}
+
+.cake5{
+     width: 250px;
+     height: 250px;
+}
+
+.cake6{
+     width: 250px;
+     height: 250px;
+}
+.cake7{
+     width: 250px;
+     height: 250px;
+}
+
+.cake8{
+     width: 250px;
+     height: 250px;
+}
+
+.cake9 {
+     width: 250px;
+     height: 250px;
+}
+
+.cake10{
+     width: 250px;
+     height: 250px;
+}
+.cake11{
+     width: 250px;
+     height: 250px;
+}
+
+.cake12{
+     width: 250px;
+     height: 250px;
+}
+
+footer {
+     background-color: #9b0822;
+     margin-top: 50px;
+     display: flexbox;
+     height: 200px;
+     width: 100%;
+     padding: 1%;
+     justify-content: space-evenly;
+}
+
+.contactblock {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-evenly;
+}
+
+.contactblock p {
+     color: azure;
+     margin-top: 20px;
+}
+
+.page{
+     margin-top: 20px;
+     margin-left: -100px;
+}
+
+.imgblock{
+     display: flex;
+     flex-direction: row;
+     justify-content: space-evenly;
+     margin-left: 100px;
+}
+
+.pin{
+     width: 25px;
+     height: 25px;
+     margin-top: 10px;
+}
+
+.phone {
+     width: 30px;
+     height: 30px;
+     margin-top: 10px;
+}
+
+.email {
+     width: 25px;
+     height: 25px;
+     margin-top: 10px;
+}
+
+.iconse {
+     display: grid;
+     margin-top: 30px;
+     margin-left:-80px;
+}   
+
+.names{
+     margin-top: 20px;
+}
+
+.copyR{
+     
+     margin-top: 30px;
+     margin-left: -10px;
+     margin-right: 100px;
+}
+
+.copyR h2{
+      
+    font-size: 30pt;
+    font-family: "Good Timing W00 Heavy";
+    color: white;
+}

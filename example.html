@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mouse Enter and Leave with Pixel Resize</title>
+  <style>
+    #myBox {
+      width: 150px;
+      height: 150px;
+      background-color: lightgreen;
+      transition: width 0.3s ease, height 0.3s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: sans-serif;
+    }
+  </style>
+</head>
+<body>
+
+<div id="myBox">Hover me!</div>
+
+<script>
+  const box = document.getElementById('myBox');
+
+  // Store the original size
+  const originalWidth = 150;
+  const originalHeight = 150;
+
+  // New size on hover
+  const hoverWidth = 180;
+  const hoverHeight = 180;
+
+  box.addEventListener('mouseenter', function() {
+    box.style.width = hoverWidth + 'px';
+    box.style.height = hoverHeight + 'px';
+  });
+
+  box.addEventListener('mouseleave', function() {
+    box.style.width = originalWidth + 'px';
+    box.style.height = originalHeight + 'px';
+  });
+</script>
+
+</body>
+</html>

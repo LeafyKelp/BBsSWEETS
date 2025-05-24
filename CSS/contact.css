@@ -1,0 +1,239 @@
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+
+.logo{
+
+     width: 100px;
+     height: 100px;
+     margin-top:-25px;
+}
+body{
+
+     font-family: sans-serif;
+     background-color: rgb(196, 196, 196);
+}
+
+
+nav {
+     background-color: #9b0822;
+     height: 80px;
+     width: 100%;
+     display: flex;
+     padding: 1%;
+     justify-content: center;
+
+}
+
+nav ul {
+     list-style: none;
+     display: flex;
+}
+
+nav ul li {
+     padding: 10px 30px;
+     position: relative;
+}
+
+nav ul li a {
+     color: azure;
+     text-decoration: none;
+     font-size: 20px;
+}
+
+nav ul li a:hover {
+     color: pink;
+}
+
+nav ul li:hover  .dropdwn {
+     display: block;
+     position: absolute;
+     top: 100%;
+     left: 0;
+     background-color: #9b0822;
+     z-index: 2000;
+}
+
+nav ul li:hover  .dropdwn a {
+     font-size: 10pt;
+}
+
+
+.dropdwn {
+     display: none;
+}
+
+nav ul li:hover  .dropdwn ul{
+     display: block;
+     margin: 5px;
+}
+
+nav ul li:hover  .dropdwn ul li{
+     width: 150px;
+     padding: 10px;
+}
+.drop2 {
+     display: none;
+}
+
+.drop_d:hover .drop2 {
+     display: block;
+     position: absolute;
+     top: 0;
+     left: 150px;
+     background-color: #9b0822;
+}
+
+.drop_d:hover .drop2 a {
+     font-size: 10pt;
+}
+
+.fas {
+     float: right;
+     margin: 5;
+     padding: 2px;
+}
+
+.container {
+     width: 100%;
+     min-height: 100vh;
+     padding: 2rem;
+     background-color: whitesmoke;
+     overflow: hidden;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+
+.form{
+     width: 100%;
+     max-width: 820px;
+     height: 500px;
+     background-color: white;
+     border-radius: 10px;
+     box-shadow: 0 0 10px 1px #9b0822;
+     z-index: 1000;
+     overflow: hidden;
+     display: grid;
+     grid-template-columns: repeat(2,1fr);
+}
+
+.con_information{
+     background-color: white;
+}
+.con_form{
+     background-color: #9b0822;
+}
+
+.icon1{
+     width: 28px;
+     margin-right: 0.7rem;
+}
+
+.con_information{
+     padding: 2.3rem 2.2rem;
+     position: relative;
+}
+
+.con_information .title {
+     color: #9b0822;
+}
+.t1 {
+     color: #9b0822;
+     margin:  1.5rem 9 2rem 0;
+}
+
+.container_inner{
+     margin-top: 75px;
+}
+
+.info {
+     display: flex;
+     margin: 0.7rem 10px 20px;
+     align-items: center;
+     font-size: 0.95rem;
+}
+
+.text{
+
+     margin-top: 30px;
+}
+
+footer {
+     background-color: #9b0822;
+     margin-top: 800px;
+     display: flexbox;
+     height: 200px;
+     width: 100%;
+     padding: 1%;
+     justify-content: space-evenly;
+     position: absolute;
+}
+
+.contactblock {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-evenly;
+}
+
+.contactblock p {
+     color: azure;
+     margin-top: 20px;
+}
+
+.page{
+     margin-top: 20px;
+     margin-left: -100px;
+}
+
+.imgblock{
+     display: flex;
+     flex-direction: row;
+     justify-content: space-evenly;
+     margin-left: 100px;
+}
+
+.pin{
+     width: 25px;
+     height: 25px;
+     margin-top: 10px;
+}
+
+.phone {
+     width: 30px;
+     height: 30px;
+     margin-top: 10px;
+}
+
+.email {
+     width: 25px;
+     height: 25px;
+     margin-top: 10px;
+}
+
+.iconse {
+     display: grid;
+     margin-top: 30px;
+     margin-left:-80px;
+}   
+
+.names{
+     margin-top: 20px;
+}
+
+.copyR{
+     
+     margin-top: 30px;
+     margin-left: -10px;
+     margin-right: 100px;
+}
+
+.copyR h2{
+      
+    font-size: 30pt;
+    font-family: "Good Timing W00 Heavy";
+    color: white;
+}
