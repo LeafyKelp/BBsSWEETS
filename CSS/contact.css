@@ -14,7 +14,7 @@
 body{
 
      font-family: sans-serif;
-     background-color: rgb(196, 196, 196);
+
 }
 
 
@@ -164,13 +164,14 @@ nav ul li:hover  .dropdwn ul li{
 
 footer {
      background-color: #9b0822;
-     margin-top: 800px;
+     margin-top: 600px;
      display: flexbox;
      height: 200px;
      width: 100%;
      padding: 1%;
      justify-content: space-evenly;
      position: absolute;
+     margin-left: -350.5px;
 }
 
 .contactblock {
@@ -236,4 +237,24 @@ footer {
     font-size: 30pt;
     font-family: "Good Timing W00 Heavy";
     color: white;
+}
+
+.map{
+     position:relative;
+     text-align:right;
+     width:500px;
+     height:450px;
+}
+
+.gmap{
+     overflow:hidden;
+     background:none;
+     width:500px;
+     height:600px;
+}
+
+.gmap iframe{ 
+     width:100%;
+     height:100%;
+     border:0;
 }
