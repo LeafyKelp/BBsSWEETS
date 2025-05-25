@@ -303,7 +303,7 @@ nav ul li:hover  .dropdwn ul li{
     position: relative;
     margin-top: -10px;
     padding-top: 100px;
-    text-align: justify;
+    text-align: center;
     color: azure;
     visibility: hidden;
     opacity: 0;
@@ -314,12 +314,14 @@ nav ul li:hover  .dropdwn ul li{
     visibility: visible;
     opacity: 1;
     margin-top: -20px;
-    transition-delay: 0.3s;
+    text-align: center;
+    transition-delay: 0.2s;
     width: 300px;
     padding-top: 70px;
     padding-left: 20px;
     padding-right: 40px;
 }
+
 
 .container .sq1 .text h2 {
      color: azure;
@@ -430,7 +432,7 @@ hr{
     position: relative;
     margin-top: 10px;
     padding-top: 30px;
-    text-align: justify;
+    text-align: center;
     color: #83071e;
     margin-left: 20px;
     margin-right: 20px;
@@ -466,6 +468,39 @@ hr{
      font-size: 16pt;
      font-weight: bold;
      text-align: center;
+}
+
+.Creview{
+     margin-top: 50px;
+     font-style: italic;
+     font-family:sans-serif;
+     color: #9b0822;
+     text-shadow:black 2px;
+     text-align: center;
+     transition: 0.3s ease-in-out;
+     font-size: 35pt;
+}
+
+.reviebg {
+     width: 100%;
+     height: 100vh;
+     margin-top: 50px;
+}
+
+.reviewbox {
+     justify-content: center;
+     white-space: nowrap;
+     gap: 15px;
+     overflow: auto;
+     padding: 10px;
+}
+
+
+.reviewbox .ri1 {
+     padding: 10px;
+     width: 400px;
+     height: 400px;
+     display: inline-block;
 }
 
 footer {
